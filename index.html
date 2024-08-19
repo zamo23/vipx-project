@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Regresivo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <!--éxito -->
+            <div id="successMessage" class="alert success" style="display: none;">
+                <div class="icon">&#10004;</div>
+                <div class="message">
+                    <h2>Exito!</h2>
+                    <p>Tu correo ha sido registrado correctamente.</p>
+                </div>
+                <button onclick="closeAlert('successMessage')" class="close-btn">Continuar</button>
+            </div>
+
+            <!--error -->
+            <div id="errorMessage" class="alert error" style="display: none;">
+                <div class="icon">&#10006;</div>
+                <div class="message">
+                    <h2>Error!</h2>
+                    <p>Ocurrió un problema al registrar tu correo. Por favor, intenta de nuevo.</p>
+                </div>
+                <button onclick="closeAlert('errorMessage')" class="close-btn">Volver a intentar</button>
+            </div>
+
+            <!--página -->
+            <img src="img/persona_trabajando.png" alt="Persona trabajando" class="hero-image">
+            <h1>Nuestro sitio web estará disponible pronto</h1>
+            <div id="countdown" class="countdown">
+                <div><span id="days">00</span><p>DIAS</p></div>
+                <div><span id="hours">00</span><p>HORAS</p></div>
+                <div><span id="minutes">00</span><p>MINUTOS</p></div>
+                <div><span id="seconds">00</span><p>SEGUNDOS</p></div>
+            </div>
+            <form>
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">RECIBIR NOTIFICAR</button>
+            </form>
+            <p class="credits">Canal de whatsapp <a href="https://w.app/cvpx" target="_blank">cvpx</a></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
